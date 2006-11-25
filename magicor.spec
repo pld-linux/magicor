@@ -42,10 +42,10 @@ Group:		X11/Applications/Games
 Requires:	%{name} = %{version}-%{release}
 
 %description editor
-Level editor for Magicor,
+Level editor for Magicor.
 
 %description editor -l pl
-Edytor poziomów dla Magico.
+Edytor poziomów dla Magicor.
 
 %prep
 %setup -q -n %{name}-%{version}-%{_rc} -a 1
