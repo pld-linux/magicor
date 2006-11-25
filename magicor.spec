@@ -4,7 +4,7 @@
 #
 %define	_rc	rc2
 Summary:	Puzzle game with "fancy" graphics
-Summary(pl):	Gra logiczna z "gustown±" grafik±
+Summary(pl):	Gra logiczna z "wyszukan±" grafik±
 Name:		magicor
 Version:	1.0
 Release:	0.%{_rc}.1
