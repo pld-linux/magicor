@@ -2,18 +2,17 @@
 # Conditional build
 %bcond_without	editor	# build without editor
 #
-%define	_rc	rc2
 Summary:	Puzzle game with "fancy" graphics
 Summary(pl):	Gra logiczna z "wyszukan±" grafik±
 Name:		magicor
 Version:	1.0
-Release:	0.%{_rc}.1
+Release:	1
 License:	Public Domain
 Group:		X11/Applications/Games
-Source0:	http://dl.sourceforge.net/magicor/%{name}-source-%{version}-%{_rc}.tar.gz
-# Source0-md5:	8914ec1bcc05f05cc7c9a3d47993a2c8
-Source1:	http://dl.sourceforge.net/magicor/%{name}-data-%{version}-%{_rc}.tar.gz
-# Source1-md5:	bc2004e9d28268d00f286b5172781827
+Source0:	http://dl.sourceforge.net/magicor/%{name}-source-%{version}.tar.gz
+# Source0-md5:	8f30cc33e531a08583bb60af9f373503
+Source1:	http://dl.sourceforge.net/magicor/%{name}-data-%{version}.tar.gz
+# Source1-md5:	2e8146d3bc69811e7908073a9be41ecb
 Patch0:		%{name}-Makefile.patch
 Patch1:		%{name}-path.patch
 URL:		http://magicor.sourceforge.net/
@@ -44,7 +43,7 @@ Level editor for Magicor.
 Edytor poziomów dla Magicor.
 
 %prep
-%setup -q -n %{name}-%{version}-%{_rc} -a 1
+%setup -q -a 1
 %patch0 -p1
 %patch1 -p1
 
@@ -57,7 +56,7 @@ install -d $RPM_BUILD_ROOT{%{_bindir},%{_sysconfdir}}
 
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT \
-	MAGICOR=%{name}-%{version}-%{_rc}
+	MAGICOR=%{name}-%{version}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
