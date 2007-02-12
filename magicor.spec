@@ -3,7 +3,7 @@
 %bcond_without	editor	# build without editor
 #
 Summary:	Puzzle game with "fancy" graphics
-Summary(pl):	Gra logiczna z "wyszukan±" grafik±
+Summary(pl.UTF-8):   Gra logiczna z "wyszukanÄ…" grafikÄ…
 Name:		magicor
 Version:	1.0
 Release:	1
@@ -26,21 +26,21 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 As a heroic penguin you must create, destroy and move blocks of ice to
 destroy enemies and extinguish demonic hell fire.
 
-%description -l pl
-Jako bohaterski pingwin gracz musi tworzyæ, niszczyæ i przesuwaæ
-lodowe bloki aby pokonaæ wrogów i zwalczyæ demoniczne si³y.
+%description -l pl.UTF-8
+Jako bohaterski pingwin gracz musi tworzyÄ‡, niszczyÄ‡ i przesuwaÄ‡
+lodowe bloki aby pokonaÄ‡ wrogÃ³w i zwalczyÄ‡ demoniczne siÅ‚y.
 
 %package editor
 Summary:	Level editor for Magicor
-Summary(pl):	Edytor poziomów dla Magicor
+Summary(pl.UTF-8):   Edytor poziomÃ³w dla Magicor
 Group:		X11/Applications/Games
 Requires:	%{name} = %{version}-%{release}
 
 %description editor
 Level editor for Magicor.
 
-%description editor -l pl
-Edytor poziomów dla Magicor.
+%description editor -l pl.UTF-8
+Edytor poziomÃ³w dla Magicor.
 
 %prep
 %setup -q -a 1
