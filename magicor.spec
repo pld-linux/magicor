@@ -3,7 +3,7 @@
 %bcond_without	editor	# build without editor
 #
 Summary:	Puzzle game with "fancy" graphics
-Summary(pl.UTF-8):   Gra logiczna z "wyszukaną" grafiką
+Summary(pl.UTF-8):	Gra logiczna z "wyszukaną" grafiką
 Name:		magicor
 Version:	1.0
 Release:	1
@@ -32,7 +32,7 @@ lodowe bloki aby pokonać wrogów i zwalczyć demoniczne siły.
 
 %package editor
 Summary:	Level editor for Magicor
-Summary(pl.UTF-8):   Edytor poziomów dla Magicor
+Summary(pl.UTF-8):	Edytor poziomów dla Magicor
 Group:		X11/Applications/Games
 Requires:	%{name} = %{version}-%{release}
 
