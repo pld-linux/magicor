@@ -5,14 +5,14 @@
 Summary:	Puzzle game with "fancy" graphics
 Summary(pl.UTF-8):	Gra logiczna z "wyszukaną" grafiką
 Name:		magicor
-Version:	1.0
+Version:	1.1
 Release:	1
 License:	Public Domain
 Group:		X11/Applications/Games
 Source0:	http://dl.sourceforge.net/magicor/%{name}-source-%{version}.tar.gz
-# Source0-md5:	8f30cc33e531a08583bb60af9f373503
+# Source0-md5:	0ba83ba61ec7db1a0d4fed6b937ae527
 Source1:	http://dl.sourceforge.net/magicor/%{name}-data-%{version}.tar.gz
-# Source1-md5:	2e8146d3bc69811e7908073a9be41ecb
+# Source1-md5:	b681fc820d0f900120a87ae6163ee777
 Patch0:		%{name}-Makefile.patch
 Patch1:		%{name}-path.patch
 URL:		http://magicor.sourceforge.net/
@@ -64,7 +64,7 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc LICENSE README
-%attr(755,root,root) %{_bindir}/Magicor
+%attr(755,root,root) %{_bindir}/%{name}
 %config(noreplace) %verify(not md5 mtime size) %{_sysconfdir}/%{name}.conf
 %{_datadir}/%{name}
 %{py_sitescriptdir}/%{name}
@@ -72,6 +72,6 @@ rm -rf $RPM_BUILD_ROOT
 %if %{with editor}
 %files editor
 %defattr(644,root,root,755)
-%attr(755,root,root) %{_bindir}/Magicor-LevelEditor
+%attr(755,root,root) %{_bindir}/%{name}-editor
 %config(noreplace) %verify(not md5 mtime size) %{_sysconfdir}/%{name}-editor.conf
 %endif
