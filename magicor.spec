@@ -15,7 +15,7 @@ Source1:	http://dl.sourceforge.net/magicor/%{name}-data-%{version}.tar.gz
 # Source1-md5:	b681fc820d0f900120a87ae6163ee777
 Patch0:		%{name}-Makefile.patch
 Patch1:		%{name}-path.patch
-URL:		http://magicor.sourceforge.net/
+URL:		http://gitorious.org/magicor/
 BuildRequires:	python-devel >= 1:2.4
 BuildRequires:	python-pygame
 %{?with_editor:BuildRequires:	python-pygtk-devel}
