@@ -19,6 +19,7 @@ URL:		http://magicor.sourceforge.net/
 BuildRequires:	python-devel >= 1:2.4
 BuildRequires:	python-pygame
 %{?with_editor:BuildRequires:	python-pygtk-devel}
+BuildRequires:	rpm-pythonprov
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
